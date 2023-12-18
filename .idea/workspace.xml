@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added css selectors" />
+    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added AppManager, tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/StudentFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StudentFormTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,16 +63,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/QA_Auto_Projects/QA_21_22/QA21-22_DemoQA",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_21_22/QA21-22_DemoQA&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.CssLocators.radioButton">
+}</component>
+  <component name="RunManager" selected="Gradle.StudentFormTests.registrationStudentPositiveTest">
     <configuration name="CssLocators" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,7 +169,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="FirstStart.firstStartTrello" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentFormTests.registrationStudentPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -173,7 +182,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;locators.FirstStart.firstStartTrello&quot;" />
+            <option value="&quot;tests.StudentFormTests.registrationStudentPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StudentFormTests.registrationStudentPositiveTest" />
         <item itemvalue="Gradle.CssLocators.radioButton" />
         <item itemvalue="Gradle.CssLocators" />
         <item itemvalue="Gradle.CssLocators.checkBox" />
         <item itemvalue="Gradle.CssLocators.textBox" />
-        <item itemvalue="Gradle.FirstStart.firstStartTrello" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701367463318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added AppManager, tests">
+      <option name="closed" value="true" />
+      <created>1702316866676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702316866676</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +244,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added css selectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="added css selectors" />
+    <MESSAGE value="added AppManager, tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added AppManager, tests" />
   </component>
 </project>
