@@ -1,6 +1,7 @@
 package manager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -23,6 +24,11 @@ public interface HelperBase extends AppManager{
         clickBase(locator);
         element.clear();
         element.sendKeys(text);
+    }
+
+    default void hideFooter(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.querySelector('footer').style.display='none'");
     }
 
 

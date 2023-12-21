@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added AppManager, tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/StudentDTO.java" afterDir="false" />
+    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added student dto, student form test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/StudentFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StudentFormTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702316866676</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added student dto, student form test">
+      <option name="closed" value="true" />
+      <created>1702923389563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702923389563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added css selectors" />
     <MESSAGE value="added AppManager, tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added AppManager, tests" />
+    <MESSAGE value="added student dto, student form test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added student dto, student form test" />
   </component>
 </project>
