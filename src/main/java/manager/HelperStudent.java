@@ -18,11 +18,20 @@ public interface HelperStudent extends HelperBase {
     By fieldSubject = By.id("subjectsInput");
     By checkBoxSport = By.xpath("//label[@for='hobbies-checkbox-1']");
     By checkBoxReading = By.xpath("//label[@for='hobbies-checkbox-2']");
-    By checkBoxMusic =By.xpath("//label[@for='hobbies-checkbox-3']");
+    By checkBoxMusic = By.xpath("//label[@for='hobbies-checkbox-3']");
+
+    By currentAddress = By.id("currentAddress");
+    By buttonSelectState = By.id("react-select-3-input");
+    By buttonSelectCity = By.id("react-select-4-input");
+    By text_thanks_for = By.id("example-modal-sizes-title-lg");
+
+    By buttonSubmit = By.id("submit");
+    By buttonCloseModal = By.id("closeLargeModal");
 
     default void selectPracticeForm() {
 //        clickBase(buttonElements);
 //        pause(5);
+        hideFooter();
         clickBase(buttonForms);
         hideFooter();
         pause(3);
@@ -40,6 +49,21 @@ public interface HelperStudent extends HelperBase {
         addSubject(fieldSubject, student.getSubjects());
         selectHobby(student.getHobbies());
 
+        typeBase(currentAddress, student.getAddress());
+        typeState(buttonSelectState, student.getState());
+        typeCity(buttonSelectCity, student.getCity());
+
+    }
+
+    default void typeCity(By buttonSelectCity, String city){
+        driver.findElement(buttonSelectCity).sendKeys(city);
+        //driver.findElement(buttonSelectCity).sendKeys(Keys.ENTER);
+    }
+
+    default void typeState(By buttonSelectState, String state){
+        //clickBase(buttonSelectState);
+        driver.findElement(buttonSelectState).sendKeys(state);
+        driver.findElement(buttonSelectState).sendKeys(Keys.ENTER);
     }
 
     default void selectHobby(String hobbies) {
@@ -55,7 +79,6 @@ public interface HelperStudent extends HelperBase {
                 break;
         }
     }
-
 
 
     default void addSubject(By fieldSubject, String subjects) {
@@ -89,6 +112,17 @@ public interface HelperStudent extends HelperBase {
         } else {
             clickBase(By.xpath("//label[@for='gender-radio-3']"));
         }
+    }
+
+    default void clickButtonSubmit(){
+        clickBase(buttonSubmit);
+    }
+    default boolean isElementPresent_Thanks_for(){
+        return isElementPresent(text_thanks_for);
+    }
+
+    default void clickButtonCloseModal(){
+        clickBase(buttonCloseModal);
     }
 
 }

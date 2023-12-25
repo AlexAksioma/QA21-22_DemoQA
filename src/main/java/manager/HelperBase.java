@@ -31,5 +31,9 @@ public interface HelperBase extends AppManager{
         js.executeScript("document.querySelector('footer').style.display='none'");
     }
 
+    default boolean isElementPresent(By locator){
+        //return driver.findElements(locator).size()>0;
+        return !driver.findElements(locator).isEmpty();
+    }
 
 }

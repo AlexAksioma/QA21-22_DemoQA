@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added student dto, student form test">
+    <list default="true" id="193e9b77-9101-46f9-a95d-b793e13b2ce6" name="Changes" comment="added methods hobby, subject, bDay by Keys, gender">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
@@ -60,16 +60,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_21_22/QA21-22_DemoQA&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/QA_Auto_Projects/MyProject/MyDemoQA",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.StudentFormTests.registrationStudentPositiveTest">
+}]]></component>
+  <component name="RunManager" selected="Gradle.StudentFormTests.registrationStudentPositiveTest_softAssert">
     <configuration name="CssLocators" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -84,30 +84,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;locators.CssLocators&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CssLocators.checkBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;locators.CssLocators.checkBox&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +118,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CssLocators.textBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentFormTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;locators.CssLocators.textBox&quot;" />
+            <option value="&quot;tests.StudentFormTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,13 +166,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="StudentFormTests.registrationStudentPositiveTest_softAssert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.StudentFormTests.registrationStudentPositiveTest_softAssert&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StudentFormTests.registrationStudentPositiveTest_softAssert" />
+        <item itemvalue="Gradle.StudentFormTests" />
         <item itemvalue="Gradle.StudentFormTests.registrationStudentPositiveTest" />
         <item itemvalue="Gradle.CssLocators.radioButton" />
         <item itemvalue="Gradle.CssLocators" />
-        <item itemvalue="Gradle.CssLocators.checkBox" />
-        <item itemvalue="Gradle.CssLocators.textBox" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702923389563</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added methods hobby, subject, bDay by Keys, gender">
+      <option name="closed" value="true" />
+      <created>1703181891682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703181891682</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +259,7 @@
     <MESSAGE value="added css selectors" />
     <MESSAGE value="added AppManager, tests" />
     <MESSAGE value="added student dto, student form test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added student dto, student form test" />
+    <MESSAGE value="added methods hobby, subject, bDay by Keys, gender" />
+    <option name="LAST_COMMIT_MESSAGE" value="added methods hobby, subject, bDay by Keys, gender" />
   </component>
 </project>
